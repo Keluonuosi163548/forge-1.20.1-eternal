@@ -25,9 +25,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("itemGroup.eternal_love"))
                     // 添加选项卡物品
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.ETERNAL_LOVE_RING.get());
                         pOutput.accept(ModItems.LOVE_RING.get());
-
                     }).build());
 
 
