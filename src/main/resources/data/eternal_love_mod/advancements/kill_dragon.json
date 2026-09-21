@@ -1,0 +1,17 @@
+{
+  "parent": "eternal_love_mod:new_begin",
+  "display": {
+    "icon": { "item": "minecraft:dragon_egg" },
+    "title": { "translate": "advancement.eternal_love_mod.kill_dragon.title" },
+    "description": { "translate": "advancement.eternal_love_mod.kill_dragon.description" },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

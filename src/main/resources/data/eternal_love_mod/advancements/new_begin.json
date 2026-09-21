@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "eternal_love_mod:eternal_love" },
+    "title": { "translate": "advancement.eternal_love_mod.new_begin.title" },
+    "description": { "translate": "advancement.eternal_love_mod.new_begin.description" },
+    "background": "eternal_love_mod:textures/gui/advancements/backgrounds/eternal_love_advancement.png",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

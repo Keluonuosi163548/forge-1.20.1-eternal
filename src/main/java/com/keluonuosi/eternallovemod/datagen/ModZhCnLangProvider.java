@@ -1,0 +1,58 @@
+package com.keluonuosi.eternallovemod.datagen;
+
+import com.keluonuosi.eternallovemod.EternalLoveMod;
+import com.keluonuosi.eternallovemod.item.ModItems;
+import net.minecraft.data.PackOutput;
+import net.minecraftforge.common.data.LanguageProvider;
+
+//zh_cn语言文件
+public class ModZhCnLangProvider extends LanguageProvider {
+
+    public ModZhCnLangProvider(PackOutput output) {
+        super(output, EternalLoveMod.MOD_ID, "zh_cn");
+    }
+
+    @Override
+    protected void addTranslations() {
+        add(ModItems.ETERNAL_LOVE_RING.get(), "恒爱之戒");
+        add(ModItems.LOVE_RING.get(), "爱之戒");
+
+        add("itemGroup.eternal_love", "永恒之爱");
+        add("In this life and the next, forever and always, never leaving or abandoning each other", "此生此世，永生永世，永不分离");
+
+        add("curios.identifier.eternal_love_ring", "恒爱之戒");
+        add("curios.modifiers.eternal_love_ring", "恒爱之戒");
+
+        add("advancement.eternal_love_mod.new_begin.title","§d新的开始！");
+        add("advancement.eternal_love_mod.new_begin.description","§d我们从不缺乏重新开始的勇气\n无论多少次轮回，当我们睁开双眼时\n第一眼看到的都会是彼此\n§2创建新的世界");
+        add("advancement.eternal_love_mod.kill_wither.title","§d生与死？");
+        add("advancement.eternal_love_mod.kill_wither.description","§d我们杀死了冥界的使者\n但打破生与死的界限真的对吗？\n§2携带爱之戒击杀凋零");
+        add("advancement.eternal_love_mod.kill_dragon.title","§d又一次，旅途的终点");
+        add("advancement.eternal_love_mod.kill_dragon.description","§d结束了。\n但真的结束了吗？\n§2携带爱之戒击杀末影龙");
+
+
+        add("eternal_love_ring.owner_message0","§d欢迎回来♪");
+        add("eternal_love_ring.owner_message1","§4这枚戒指不属于你！");
+        add("love_ring.owner_message1","§4这枚戒指不属于你！");
+
+        add("eternal_love_ring.command_clear","§4恒爱之戒不允许对该玩家使用clear指令!");
+        add("death_message.eternal_love_ring.playerdeath","§4恒爱之戒不接受你的死亡!");
+
+        add("death_message.love_ring.playerdeath","§4爱之戒的力量扭转了生死!");
+
+
+        add("death_message.love_ring.dragon_kill","§4击败了世界的守护者，爱之戒取回了被维度压制的力量！");
+        add("death_message.love_ring.wither_kill","§4爱之戒从平衡生与死的使者身上截取了生命的力量！");
+
+        add("tooltip.eternallovemod.love_ring_item", "§7按住§r§8SHIFT§r§7显示更多§r");
+        add("tooltip.eternallovemod.love_ring_item.shift","§d你相信爱可以跨越时空吗？§r\n§d我相信哦~§r\n§6这枚戒指，就是证明§r\n");
+        add("tooltip.eternallovemod.love_ring_item.shift1","§d你相信爱可以跨越时空吗？§r\n§d我相信哦~§r\n§6这枚戒指，就是证明§r\n\n§4该物品永恒绑定，永不损毁，死亡时永不掉落§r\n§4在主手时不可与方块/实体交互§r\n§8不会被§r§c火焰§r§4、岩浆、§r§e爆炸§r§4、§r§b闪电§r§4、§r§a仙人掌§r§8破坏§r\n\n§r§4该物品永恒绑定至");
+        add("tooltip.eternallovemod.love_ring_item.shift2", "\n\n§4这枚戒指渴望着与你一同冒险§r");
+        add("tooltip.eternallovemod.love_ring_item.shift3", "\n\n§4这枚戒指见证着你的旅途§r");
+        add("tooltip.eternallovemod.love_ring_item.shift4", "\n§d凋零之证：玩家受到致命伤害时，免疫此次伤害并获得10秒无敌，冷却600秒");
+        add("tooltip.eternallovemod.love_ring_item.shift5", "\n§d屠龙之证：爱之戒所有属性加成解封");
+
+        add("tooltip.eternallovemod.eternal_love_ring_item", "§7按住§r§8SHIFT§r§7显示更多§r");
+        add("tooltip.eternallovemod.eternal_love_ring_item.shift","§d无论前世还是今生，吾之所爱仅爱一人§r\n§6此生此世，永生永世，不离不弃，白头偕老§r\n§c以此晶戒，见证我们永恒的爱§r\n\n\n\n§4该物品永恒绑定，永不损毁，死亡时永不掉落§r\n§4在主手时不可与方块/实体交互§r\n§8不会被§r§c火焰§r§4、岩浆、§r§e爆炸§r§4、§r§b闪电§r§4、§r§a仙人掌§r§8破坏§r§4\n§r§5掉入虚空§r§8、§r§5被kill§r§8、§r§5被方块或实体容器吸取§r§8或§r§5自然消失时\n§r§4自动回到背包\n§r§8佩戴时免疫clear指令§r\n§d玩家受到致命伤害时，免疫此次伤害并获得10秒无敌，冷却600秒§r\n\n§r§4该物品永恒绑定至keluonuosi");
+    }
+}

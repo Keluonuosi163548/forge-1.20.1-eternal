@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "size": 1,
+  "icon": "eternal_love_mod:slot/eternal_love_ring_slot",
+  "order": 160,
+  "add_cosmetic": false,
+  "render_toggle": true,
+  "use_native_gui": true,
+  "drop_rule": "ALWAYS_KEEP"
+}
