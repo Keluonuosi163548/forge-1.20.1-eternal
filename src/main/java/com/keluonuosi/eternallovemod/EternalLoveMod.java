@@ -8,7 +8,6 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.common.world.ForgeChunkManager;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,7 +21,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 import java.util.*;
 
-
+/* SPDX-License-Identifier: LGPL-3.0-only */
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(EternalLoveMod.MOD_ID)
