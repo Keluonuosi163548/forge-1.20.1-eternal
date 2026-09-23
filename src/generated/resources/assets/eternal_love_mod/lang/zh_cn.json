@@ -21,11 +21,13 @@
   "love_ring.owner_message1": "§4这枚戒指不属于你！",
   "tooltip.eternallovemod.eternal_love_ring_item": "§7按住§r§8SHIFT§r§7显示更多§r",
   "tooltip.eternallovemod.eternal_love_ring_item.shift": "§d无论前世还是今生，吾之所爱仅爱一人§r\n§6此生此世，永生永世，不离不弃，白头偕老§r\n§c以此晶戒，见证我们永恒的爱§r\n\n\n\n§4该物品永恒绑定，永不损毁，死亡时永不掉落§r\n§4在主手时不可与方块/实体交互§r\n§8不会被§r§c火焰§r§4、岩浆、§r§e爆炸§r§4、§r§b闪电§r§4、§r§a仙人掌§r§8破坏§r§4\n§r§5掉入虚空§r§8、§r§5被kill§r§8、§r§5被方块或实体容器吸取§r§8或§r§5自然消失时\n§r§4自动回到背包\n§r§8佩戴时免疫clear指令§r\n§d玩家受到致命伤害时，免疫此次伤害并获得10秒无敌，冷却600秒§r\n\n§r§4该物品永恒绑定至keluonuosi",
+  "tooltip.eternallovemod.eternal_love_ring_item.shift_goety_revelation": "§4此物品免疫亚波伦-末日终结的饰品夺取\n",
   "tooltip.eternallovemod.love_ring_item": "§7按住§r§8SHIFT§r§7显示更多§r",
   "tooltip.eternallovemod.love_ring_item.shift": "§d你相信爱可以跨越时空吗？§r\n§d我相信哦~§r\n§6这枚戒指，就是证明§r\n",
   "tooltip.eternallovemod.love_ring_item.shift1": "§d你相信爱可以跨越时空吗？§r\n§d我相信哦~§r\n§6这枚戒指，就是证明§r\n\n§4该物品永恒绑定，永不损毁，死亡时永不掉落§r\n§4在主手时不可与方块/实体交互§r\n§8不会被§r§c火焰§r§4、岩浆、§r§e爆炸§r§4、§r§b闪电§r§4、§r§a仙人掌§r§8破坏§r\n\n§r§4该物品永恒绑定至",
   "tooltip.eternallovemod.love_ring_item.shift2": "\n\n§4这枚戒指渴望着与你一同冒险§r",
   "tooltip.eternallovemod.love_ring_item.shift3": "\n\n§4这枚戒指见证着你的旅途§r",
   "tooltip.eternallovemod.love_ring_item.shift4": "\n§d凋零之证：玩家受到致命伤害时，免疫此次伤害并获得10秒无敌，冷却600秒",
-  "tooltip.eternallovemod.love_ring_item.shift5": "\n§d屠龙之证：爱之戒所有属性加成解封"
+  "tooltip.eternallovemod.love_ring_item.shift5": "\n§d屠龙之证：爱之戒所有属性加成解封",
+  "tooltip.eternallovemod.love_ring_item.shift_goety_revelation": "§4此物品免疫亚波伦-末日终结的饰品夺取\n"
 }

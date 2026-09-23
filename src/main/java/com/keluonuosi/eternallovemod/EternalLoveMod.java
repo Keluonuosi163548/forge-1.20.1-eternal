@@ -1,6 +1,7 @@
 package com.keluonuosi.eternallovemod;
 
 import com.keluonuosi.eternallovemod.block.ModBlocks;
+import com.keluonuosi.eternallovemod.eventbus.Mod_Loading;
 import com.keluonuosi.eternallovemod.item.ModCreativeModeTabs;
 import com.keluonuosi.eternallovemod.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -12,6 +13,7 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -42,6 +44,10 @@ public class EternalLoveMod
         // Register the commonSetup method for modloading
         //注册游戏事件监听到mod事件总线
         modEventBus.addListener(this::commonSetup);
+        //注册模组加载监听到模组事件总线
+        modEventBus.addListener(Mod_Loading::onCommonSetup);
+
+
 
         // Register ourselves for server and other game events we are interested in
         //注册初始化模组事件到mod事件总线

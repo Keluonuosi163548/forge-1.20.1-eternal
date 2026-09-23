@@ -26,8 +26,10 @@ import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 import javax.annotation.Nullable;
+import java.nio.file.Files;
 import java.util.*;
 
+import static com.keluonuosi.eternallovemod.ModEventBus.CONFIG_PATH;
 import static com.keluonuosi.eternallovemod.item.ModCurios.LoveringItem.LRI_UUID;
 
 public class EternalLoveringItem extends Item implements ICurioItem {
@@ -151,6 +153,9 @@ public class EternalLoveringItem extends Item implements ICurioItem {
         super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
         if (Screen.hasShiftDown()) {
             pTooltip.add(Component.translatable("tooltip.eternallovemod.eternal_love_ring_item.shift"));
+            if (Files.exists(CONFIG_PATH)){
+                pTooltip.add(Component.translatable("tooltip.eternallovemod.eternal_love_ring_item.shift_goety_revelation" ));
+            }
         }else{
             pTooltip.add(Component.translatable("tooltip.eternallovemod.eternal_love_ring_item"));
         }

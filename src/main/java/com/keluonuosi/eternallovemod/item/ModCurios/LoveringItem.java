@@ -25,8 +25,10 @@ import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
 import javax.annotation.Nullable;
+import java.nio.file.Files;
 import java.util.*;
 
+import static com.keluonuosi.eternallovemod.ModEventBus.CONFIG_PATH;
 import static com.keluonuosi.eternallovemod.item.ModCurios.EternalLoveringItem.ELRI_UUID_STRING;
 
 public class LoveringItem extends Item implements ICurioItem {
@@ -196,20 +198,25 @@ public class LoveringItem extends Item implements ICurioItem {
             if (tag == null || !tag.contains(LRI_UUID) || !tag.contains(LRI_NAME)){
                 pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift" ));
             }else {
-                    pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift1")
-                            .append(tag.getString(LRI_NAME)));
-                    if(!tag.contains(LRI_DRAGON_KILL) && !tag.contains(LRI_WITHER_KILL)){
-                        pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift2"));
-                    }else{
-                        pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift3"));
-                        if(tag.contains(LRI_WITHER_KILL)){
-                            pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift4"));
-                        }
-                        if(tag.contains(LRI_DRAGON_KILL)){
-                            pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift5"));
-                        }
+                pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift1")
+                        .append(tag.getString(LRI_NAME)));
+                if (Files.exists(CONFIG_PATH)){
+                    pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift_goety_revelation" ));
+                }
+                if(!tag.contains(LRI_DRAGON_KILL) && !tag.contains(LRI_WITHER_KILL)){
+                    pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift2"));
+                }else{
+                    pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift3"));
+                    if(tag.contains(LRI_WITHER_KILL)){
+                        pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift4"));
                     }
+                    if(tag.contains(LRI_DRAGON_KILL)){
+                        pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift5"));
+                    }
+                }
+
             }
+
         }else{
             pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item"));
         }
