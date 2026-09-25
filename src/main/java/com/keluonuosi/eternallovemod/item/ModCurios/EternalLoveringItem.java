@@ -1,11 +1,11 @@
 package com.keluonuosi.eternallovemod.item.ModCurios;
 
 import com.google.common.collect.Multimap;
-import com.keluonuosi.eternallovemod.EternalLoveMod;
 import com.keluonuosi.eternallovemod.Tag.ModItemTags;
 import com.keluonuosi.eternallovemod.data.ModSavedData;
 import com.keluonuosi.eternallovemod.item.ModItems;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
@@ -22,6 +22,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.fml.ModList;
 import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
@@ -30,7 +31,6 @@ import java.nio.file.Files;
 import java.util.*;
 
 import static com.keluonuosi.eternallovemod.ModEventBus.CONFIG_PATH;
-import static com.keluonuosi.eternallovemod.item.ModCurios.LoveringItem.LRI_UUID;
 
 public class EternalLoveringItem extends Item implements ICurioItem {
 
@@ -53,7 +53,7 @@ public class EternalLoveringItem extends Item implements ICurioItem {
         //如果玩家和物品的uuid不匹配，则执行完后返回
         if(isEternalUUID(player, stack)) return;
 
-        //正常逻辑
+        //正常逻辑（属性、效果）
         if (!player.hasEffect(MobEffects.REGENERATION)) {
             player.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 50, 1, false, false, true));
         }
@@ -153,8 +153,17 @@ public class EternalLoveringItem extends Item implements ICurioItem {
         super.appendHoverText(pStack, pLevel, pTooltip, pFlag);
         if (Screen.hasShiftDown()) {
             pTooltip.add(Component.translatable("tooltip.eternallovemod.eternal_love_ring_item.shift"));
-            if (Files.exists(CONFIG_PATH)){
-                pTooltip.add(Component.translatable("tooltip.eternallovemod.eternal_love_ring_item.shift_goety_revelation" ));
+            //加载启示录额外提示
+            if ( ModList.get().isLoaded("goety_revelation") && Files.exists(CONFIG_PATH)){
+                pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift_goety_revelation" ));
+            }
+            //加载莱特兰-恶意额外提示
+            if (ModList.get().isLoaded("l2hostility")) {
+                pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift_l2hostility" ));
+            }
+            //加载精妙背包额外提示
+            if(ModList.get().isLoaded("sophisticatedbackpacks")){
+                pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift_sophisticatedbackpacks" ));
             }
         }else{
             pTooltip.add(Component.translatable("tooltip.eternallovemod.eternal_love_ring_item"));
@@ -213,7 +222,7 @@ public class EternalLoveringItem extends Item implements ICurioItem {
                                 savedData.setDirty();
                             }
 
-                            player.setHealth(0);
+                            player.setHealth(0.0F);
                             return;
 
                         }

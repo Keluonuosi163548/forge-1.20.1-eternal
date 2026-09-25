@@ -50,10 +50,10 @@ public class Mod_Loading {
             Files.writeString(CONFIG_PATH, content);
             EternalLoveMod.LOGGER.info("Added eternal love rings to revelation whitelist");
             throw new RuntimeException(
-                    "\n\n[永恒之恋 / Eternal Love Mod]" +
-                    "\n[初次启动 - 已自动修改启示录配置]" +
-                    "\n[First Launch - Revelation config auto-modified]" +
-                    "\n\n请重启游戏使配置生效 / Please restart the game" +
+                    "\n\n[永恒之爱 / Eternal Love Mod]" +
+                    "\n[检测到诡厄巫法·启示录 - 已自动加载联动配置]" +
+                    "\n[Weird Goety Revelation detected - linked settings loaded automatically]" +
+                    "\n请重启游戏使配置生效 / Please restart the game" +
                     "\n"
             );
         }

@@ -36,6 +36,8 @@ public class Mod_Entity_Jon_leave {
         if (event.getEntity() instanceof ItemEntity itemEntity) {
             if (itemEntity.getItem().is(ModItems.ETERNAL_LOVE_RING.get()) || itemEntity.getItem().is(ModItemTags.ETERNAL_LOVE_SOUL_BOUND)) {
                 itemEntity.setInvulnerable(true);
+                //打入防吸取标签
+                event.getEntity().getPersistentData().putBoolean("PreventRemoteMovement", true);
                 //强加载所在区块
                 if (event.getLevel() instanceof ServerLevel serverLevel) {
                     int chunkX = itemEntity.getBlockX() >> 4;

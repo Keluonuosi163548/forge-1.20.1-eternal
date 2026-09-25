@@ -19,7 +19,7 @@
   "itemGroup.eternal_love": "Eternal Love",
   "love_ring.owner_message1": "§dThis ring doesn't belong to you!",
   "tooltip.eternallovemod.eternal_love_ring_item": "§7Hold down §r§8SHIFT§r§7 to see more\n",
-  "tooltip.eternallovemod.eternal_love_ring_item.shift": "§dWhether in past lives or this one, the one I love is only you.\n§6In this life and forevermore, through all eternity, never leaving, never giving up, growing old together.  §r\n§cWith this crystal ring, let's witness our eternal love.§r\n\n\n\n§4This item is bound forever and will never drop on death§r\n§4Can't interact with blocks/entities when in the main hand§r\n§8Cannot be destroyed by §r§cfire§r§4, lava, §r§eexplosions§r§4, §r§blightning§r§4, §r§acacti§r\n§r§5Falling into the void§r§8, §r§5being killed§r§8, §r§5being sucked up by a block or entity container§r§8, or §r§5When it naturally disappears\n§r§4Automatically returns to the inventory§r\n§d When the player takes fatal damage, they are immune to this damage and gain 10 seconds of invincibility, with a cooldown of 600 seconds\n\n§r§4This item is permanently bound to Keluonuosi",
+  "tooltip.eternallovemod.eternal_love_ring_item.shift": "§dWhether in past lives or this one, the one I love is only you.\n§6In this life and forevermore, through all eternity, never leaving, never giving up, growing old together.  §r\n§cWith this crystal ring, let's witness our eternal love.§r\n\n\n\n§4This item is bound forever and will never drop on death§r\n§4Can't interact with blocks/entities when in the main hand§r\n§8Cannot be destroyed by §r§cfire§r§4, lava, §r§eexplosions§r§4, §r§blightning§r§4, §r§acacti§r\n§r§5Falling into the void§r§8, §r§5being killed§r§8, §r§5being sucked up by a block or entity container§r§8, or §r§5When it naturally disappears\n§r§4Automatically returns to the inventory§r\n§r§bForce load the chunk when acting as an entity§r\n§d When the player takes fatal damage, they are immune to this damage and gain 10 seconds of invincibility, with a cooldown of 600 seconds\n\n§r§4This item is permanently bound to Keluonuosi",
   "tooltip.eternallovemod.eternal_love_ring_item.shift_goety_revelation": "§4This item is immune to Apollyon - The Apocalypse accessory stealing",
   "tooltip.eternallovemod.love_ring_item": "§7Hold down §r§8SHIFT§r§7 to see more\n",
   "tooltip.eternallovemod.love_ring_item.shift": "§dDo you believe love can transcend time and space?§r\n§dI believe it can~§r\n§6This ring is the proof§r\n",
@@ -28,5 +28,6 @@
   "tooltip.eternallovemod.love_ring_item.shift3": "\n\n§4This ring witnesses your journey§r",
   "tooltip.eternallovemod.love_ring_item.shift4": "\n§dWither Token: When the player takes fatal damage, they are immune to this damage and gain 10 seconds of invincibility, with a cooldown of 600 seconds",
   "tooltip.eternallovemod.love_ring_item.shift5": "\n§dProof of Dragon Slaying: All attribute bonuses of the Love_Ring unlocked",
-  "tooltip.eternallovemod.love_ring_item.shift_goety_revelation": "§4This item is immune to Apollyon - The Apocalypse accessory stealing"
+  "tooltip.eternallovemod.love_ring_item.shift_goety_revelation": "§4This item is immune to Apollyon - The Apocalypse accessory stealing",
+  "tooltip.eternallovemod.love_ring_item.shift_l2hostility": "§4This item is immune to L2hostility's Gods' Reckoning"
 }

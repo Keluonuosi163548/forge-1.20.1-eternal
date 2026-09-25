@@ -20,6 +20,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.fml.ModList;
 import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
@@ -55,9 +56,12 @@ public class LoveringItem extends Item implements ICurioItem {
         if (player.level().isClientSide()) return;
         //如果玩家和物品的uuid不匹配，则执行完后返回
         CompoundTag tag = stack.getOrCreateTag();
+
+        //随机生成初始属性
         if (!tag.contains(LRI_TIER)) {
             tag.putInt(LRI_TIER, new java.util.Random().nextInt(9) + 1);
         }
+        //绑定玩家uuid和名称
         if (!tag.contains(LRI_UUID)) {
             tag.putUUID(LRI_UUID, player.getUUID());
             tag.putString(LRI_NAME, player.getName().getString());
@@ -200,9 +204,21 @@ public class LoveringItem extends Item implements ICurioItem {
             }else {
                 pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift1")
                         .append(tag.getString(LRI_NAME)));
-                if (Files.exists(CONFIG_PATH)){
+                //加载启示录额外提示
+                if ( ModList.get().isLoaded("goety_revelation") && Files.exists(CONFIG_PATH)){
                     pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift_goety_revelation" ));
                 }
+                //加载莱特兰-恶意额外提示
+                if (ModList.get().isLoaded("l2hostility")) {
+                    pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift_l2hostility" ));
+                }
+                //加载精妙背包额外提示
+                if(ModList.get().isLoaded("sophisticatedbackpacks")){
+                    pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift_sophisticatedbackpacks" ));
+                }
+
+
+                //剧情标签判断
                 if(!tag.contains(LRI_DRAGON_KILL) && !tag.contains(LRI_WITHER_KILL)){
                     pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift2"));
                 }else{

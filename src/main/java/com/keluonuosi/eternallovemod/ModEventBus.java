@@ -17,6 +17,7 @@ import java.util.*;
 public class ModEventBus {
 
     public static final Map<UUID,ItemStack> PENDING_FIRST_JOIN_ITEMS = new HashMap<>();
+    public static final String LIT="Love_Invincible_Tick";
     public static final Logger LOGGER_EventBus = LogUtils.getLogger();
     public static boolean Goety_Revelation = false;
     // 配置文件路径
