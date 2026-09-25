@@ -1,0 +1,3 @@
+本模组的代码保护功能，分别使用了其余模组的以下功能：
+l2hostility 莱特兰-恶意 no_seal标签    防止被诸神黄昏封印
+sophisticatedbackpacks精妙背包 PreventRemoteMovement:1d标签 防止被磁铁升级吸取
