@@ -1,3 +1,8 @@
 本模组的代码保护功能，分别使用了其余模组的以下功能：
 l2hostility 莱特兰-恶意 no_seal标签    防止被诸神黄昏封印
 sophisticatedbackpacks精妙背包 PreventRemoteMovement:1d标签 防止被磁铁升级吸取
+
+
+
+在此感谢以上模组的作者对mc开发环境的贡献！！！
+特别鸣谢：P3pp3rF1y，WinDanesz，Ridanisaurus，MegaDarkness，零号玩家，某名昆仲，LightLand，lcy0x1，丸丶神，Ender_Ruier，KukuLenyu，一只路过的小吴，伊拉格－凋灵，
