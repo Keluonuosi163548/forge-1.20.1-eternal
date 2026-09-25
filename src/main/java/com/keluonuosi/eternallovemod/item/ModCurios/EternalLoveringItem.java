@@ -154,7 +154,7 @@ public class EternalLoveringItem extends Item implements ICurioItem {
         if (Screen.hasShiftDown()) {
             pTooltip.add(Component.translatable("tooltip.eternallovemod.eternal_love_ring_item.shift"));
             //加载启示录额外提示
-            if ( ModList.get().isLoaded("goety_revelation") && Files.exists(CONFIG_PATH)){
+            if ( ModList.get().isLoaded("goety_revelation")){
                 pTooltip.add(Component.translatable("tooltip.eternallovemod.love_ring_item.shift_goety_revelation" ));
             }
             //加载莱特兰-恶意额外提示
